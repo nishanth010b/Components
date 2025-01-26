@@ -47,7 +47,6 @@ export class Marquee {
     for (let i = 0; i < numOfCopies; i++) {
       const clone = this.marqueeInner.cloneNode(true);
       this.wrapper.appendChild(clone);
-      console.log(i);
     }
 
     this.marquee.appendChild(this.wrapper);
