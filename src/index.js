@@ -1,3 +1,6 @@
-import { Marquee } from "./marquee";
+import { Marquee } from "./marquee-component/marquee";
 
-const marquee = new Marquee("[data-marquee]");
+const marqueeElems = document.querySelectorAll("[data-marquee='wrap']");
+marqueeElems.forEach((marqueeElem) => {
+  const marquee = new Marquee(marqueeElem);
+});
